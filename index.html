@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento - Salão de Beleza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Agendamento - Salão de Beleza</h1>
+    <p>Escolha seu serviço e agende seu horário!</p>
+  </header>
+
+  <main>
+    <form id="booking-form">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="service">Serviço:</label>
+      <select id="service" name="service" required>
+        <option value="Aplicação">Aplicação</option>
+        <option value="Manutenção">Manutenção</option>
+        <option value="Banho de Gel">Banho de Gel</option>
+        <option value="Blindagem">Blindagem</option>
+        <option value="Esmalte em Gel">Esmalte em Gel</option>
+        <option value="Remoção">Remoção</option>
+      </select>
+
+      <label for="date">Data:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Horário:</label>
+      <input type="time" id="time" name="time" required>
+
+      <button type="submit">Agendar</button>
+    </form>
+    <p id="response"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

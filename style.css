@@ -1,0 +1,114 @@
+/* Estilo global */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+}
+
+/* Container principal */
+main {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form button {
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #4caf50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+form button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Resposta */
+#response {
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Mensagens de sucesso e erro */
+#response.success {
+  color: #4caf50;
+}
+
+#response.error {
+  color: #f44336;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  main {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
